@@ -37,11 +37,10 @@ node {
         echo "Installing artifacts for tests and builds"
         sh 'mvn install'
     }
-
-    // Stage: Clean Workspace
-    stage('clean workspace') {
-        echo "Cleaning the workspace"
-        sh 'mvn clean'
+stage('clean workspace') {
+    echo "Cleaning the workspace"
+    sh 'mvn clean -X'
+}
     }
 }
 
