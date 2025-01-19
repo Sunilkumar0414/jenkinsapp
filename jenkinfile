@@ -3,7 +3,7 @@ node {
     stage ('checkout code') {
         echo 'Cloning the repository from the SCM'
         // Correct way to clone the repository
-        git url: 'https://github.com/Sunilkumar0414/jenkinsapp.git', branch: 'main'
+        git url: 'https://github.com/Sunilkumar0414/jenkinsapp.git', branch: 'master'
     }
 
     // Stage: Set Up Environment
