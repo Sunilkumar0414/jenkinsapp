@@ -3,7 +3,7 @@ node {
  // clone the code from the repository from the scm
  stage ('checkout code') {
     echo 'cloning the repository from the scm'
-
+     https://github.com/Sunilkumar0414/jenkinsapp.git
  }
  // stage: set up environment
  // verifying the maven installation using 'maven -version'
