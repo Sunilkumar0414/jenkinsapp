@@ -5,6 +5,12 @@ node {
         git url: 'https://github.com/Sunilkumar0414/jenkinsapp.git', branch: 'master'
     }
 
+    // Stage: List files in workspace to check the repository structure
+    stage('List files in workspace') {
+        echo 'Listing files in the workspace'
+        sh 'ls -al /var/lib/jenkins/workspace/scriptedpipeline'
+    }
+
     // Stage: Install Maven
     stage('install maven') {
         echo 'Installing Maven on the server'
@@ -37,4 +43,5 @@ node {
         echo "Installing artifacts for tests and builds"
         sh 'mvn install'
     }
-}  // This closing brace was missing in your pipeline!
+}
+
