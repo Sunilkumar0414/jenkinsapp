@@ -1,39 +1,48 @@
 node {
     // Stage: Checkout Code
-    stage ('checkout code') {
+    stage('checkout code') {
         echo 'Cloning the repository from the SCM'
-        // Correct way to clone the repository
         git url: 'https://github.com/Sunilkumar0414/jenkinsapp.git', branch: 'master'
     }
 
+    // Stage: Install Maven
+    stage('install maven') {
+        echo 'Installing Maven on the server'
+        sh '''
+            sudo apt update
+            sudo apt install -y maven
+        '''
+    }
+
     // Stage: Set Up Environment
-    stage ('set up environment') {
+    stage('set up environment') {
         echo 'Verifying the Maven version'
         sh 'mvn -version'
     }
 
     // Stage: Compile Code
-    stage ('compile code') {
+    stage('compile code') {
         echo 'Compiling the code using Maven'
         sh 'mvn compile'
     }
 
     // Stage: Test Maven
-    stage ('test maven') {
+    stage('test maven') {
         echo 'Running Maven tests'
         sh 'mvn test'
     }
 
     // Stage: Install Artifacts
-    stage ('install artifacts') {
+    stage('install artifacts') {
         echo "Installing artifacts for tests and builds"
         sh 'mvn install'
     }
 
     // Stage: Clean Workspace
-    stage ('clean workspace') {
+    stage('clean workspace') {
         echo "Cleaning the workspace"
         sh 'mvn clean'
     }
 }
+
 
