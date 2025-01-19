@@ -1,27 +1,13 @@
------BEGIN RSA PRIVATE KEY-----
-MIIEowIBAAKCAQEA517OYMShibnzXtpGnapR1yIEbfotXWPtF+dwuKbZJT9o5PQX
-j36wP8nfhhxe3hyzmEnIUHO/ZQy3ixlP61jdkU3hlKSJJ9xBUu5W7vhbKb4GPeOa
-jgivTjq5SltQRc/HUZpGY6wTqt3PeveBc0HThD3/N5DBijs0caCEUyUEYMhJ8CIE
-S4W8kWwnqkZZqRG8RqhINCn93DSX2BopEYABv/3tQ1F0U+hQr7vQcjtHZEMzg7wx
-LjVn722O0e18SQginrvGSdIDPJhPxFSt7HRa8CK0dSGdq01oNJdTo3nj6o+8ZX2K
-88mwz8Kuryx+HEhzmE/TKRWLPGZ/AJzozBFBEwIDAQABAoIBAApOH7URrPw8awmT
-gUeueVyyqC3Z0cFyHPJOnaerzsoo69wevxnmE6WTsUAA7XzJHHqw9poWvbSbf2VT
-qEqcN6osJNsBBRbgaYxvDzIvn6fZTd/dzll7K4u5c91K+eVSHteUnoP7+xhGLuKU
-OZDPosMmG8L20Jf+kRRqiNpHMM26qFTduiiPV9GO1GTEa12mfPdk7Pk8C6OHIuUM
-jLvxGRPsDktT/xVbnb+/5o5zNUP3Ydy5sl9WOW54gFBJxbtp7maMijPDVBNRUZV8
-VZkN/mmGJp6Td8f9t/SVEoTTo1lodF/t8I+Kd58tKL08xi6Px9pBaNAbV0PgYKkh
-smzljskCgYEA/m5zqNSHGlI3QFTjOZQqHO5/xRRXmTtbNeyPhhlZulQO2SJVNo4q
-uMd0CNPRM6QmdgDPGzzToDQiXE2/iTnXsuMMUkFKIRqn7EYBN4qwg3jDR/vrbtgN
-R21GJ82Vazu2dZibh9LgmBptV1FsSuTs9TO9v8k17S8kPgTnSE3XstUCgYEA6Mv1
-exmMgFCwp4W6HQGJHTS8hQoocGruvpqkWiJZO1EsXOMhY/qmmzU5og1KF1S1h+qg
-sHg206+MM/Ah2EtLShEzBugI5/OvlgbL3nL9ghZp2Pvg/l+0P8xmvKOgOXJDrWCL
-UgR+LKXUVxF+TLU2RaWfOZEl69Lhj1fwmd0ICEcCgYEAjvPT/Cnc9sb20Chhuroq
-pzLBiyOQzEFzT+roAPpBVdVgulL1+b8K9eLqqQMJ6a/zBB4UP0N/y+U+4Qm18g4T
-ySiUhaq1UcA+VRxIFsLPxi6V2d4LO64cV+NnpXl22FcmfxANYtTy58MBaCwRYksZ
-b/NwS09sAyWXgVkT8aX66TkCgYACS3BiBEB0S1dSb2kEPC2j0g9BqHX5lbRAwLl6
-AfirMwOi7sI3gBMAWKf2xvbCAB3B9zgaRTUVJRfWszlCLovRcRX1rXfZAXfrnKmJ
-ycxh6eKlNuZi24KlVlh054/+wPeVz+vPpSexPPk42n1KOEcOrLFDGgErr+p1RUKj
-4Z/gpQKBgDY1nIb8b7HAttd1VMQkBldtVZcpM+kxoNOQxrWeJPLVlECYmR8wZ500
-QNJxUBItshwqE+o2NpeajB4SyvNbOWpTHMnUzG+9mUCNHxbXd3iEjg2kW0cfiSHe
-LmpJbhV1hSvcmESKxsC3E7S6eLQzCkfoV3FYyc4kUt9O32IbeYus
------END RSA PRIVATE KEY-----
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.example</groupId>
+    <artifactId>my-project</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+</project>
+
+
+
