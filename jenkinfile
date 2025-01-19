@@ -1,38 +1,39 @@
 node {
- // stage:checkout code
- // clone the code from the repository from the scm
- stage ('checkout code') {
-    echo 'cloning the repository from the scm'
-     https://github.com/Sunilkumar0414/jenkinsapp.git
- }
- // stage: set up environment
- // verifying the maven installation using 'maven -version'
- stage ('set up environment') {
-    echo 'verifying the maven version'
-    sh 'mvn -version'
- }
- // stage: compile code
- // compiling the code using maven
- stage ('compile code') {
-    echo 'compiling the code using the maven'
-    sh 'mvn compile'
- }
- // stage: test maven
- // running maven to test 
- stage ('test mavn') {
-    echo 'running maven '
-    sh 'mvn test'
- }
- // stage: install artifacts
- // after install bulid the artifact
- stage ('install artifacts') {
-    echo "installing artifacts for test and builds"
-    sh "mvn install"
- }
- // stage: clean workspace
- // cleaning workspace after the installation is complete
- stage ('clean workspace') {
-    echo "cleanning the workspace"
-    sh "mvn clean "
- }
+    // Stage: Checkout Code
+    stage ('checkout code') {
+        echo 'Cloning the repository from the SCM'
+        // Correct way to clone the repository
+        git url: 'https://github.com/Sunilkumar0414/jenkinsapp.git', branch: 'main'
+    }
+
+    // Stage: Set Up Environment
+    stage ('set up environment') {
+        echo 'Verifying the Maven version'
+        sh 'mvn -version'
+    }
+
+    // Stage: Compile Code
+    stage ('compile code') {
+        echo 'Compiling the code using Maven'
+        sh 'mvn compile'
+    }
+
+    // Stage: Test Maven
+    stage ('test maven') {
+        echo 'Running Maven tests'
+        sh 'mvn test'
+    }
+
+    // Stage: Install Artifacts
+    stage ('install artifacts') {
+        echo "Installing artifacts for tests and builds"
+        sh 'mvn install'
+    }
+
+    // Stage: Clean Workspace
+    stage ('clean workspace') {
+        echo "Cleaning the workspace"
+        sh 'mvn clean'
+    }
 }
+
