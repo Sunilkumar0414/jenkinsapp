@@ -37,7 +37,4 @@ node {
         echo "Installing artifacts for tests and builds"
         sh 'mvn install'
     }
-
-}
-
-
+}  // This closing brace was missing in your pipeline!
